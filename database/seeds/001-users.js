@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs'); // Import for encryption
 
 exports.seed = function(knex, Promise) {
   return knex('users')
-    .truncate()
+    .del()
     .then(function() {
       return knex('users').insert([
         {
