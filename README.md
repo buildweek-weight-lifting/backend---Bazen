@@ -29,8 +29,8 @@ https://get-hercules.herokuapp.com/
 
 - [Auth Routes](#auth-routes)
 - [Users Routes](#users-routes)
-- [Journals Routes](#journals-routes)
-- [Exercises Routes](#exercises-routes)
+- [Journals Routes](#journal-routes)
+- [Exercises Routes](#exercise-routes)
 
 # DATA STRUCTURES
 
@@ -42,7 +42,7 @@ https://get-hercules.herokuapp.com/
   "username": "admin",                      // String, required
   "password": "password",                   // String, required
   "firstName": "admin",                     // String, required
-  "lastName": "admin",                   // String, required
+  "lastName": "admin",                      // String, required
   "email": "admin@gmail.com"                // String, required
 }
 ```
@@ -52,7 +52,7 @@ https://get-hercules.herokuapp.com/
 ```
 {
   "id": 1,                                  // Integer (primary key provided by server and autoincrements)
-  "date": "June 24, 2019",                    // String, required
+  "date": "June 24, 2019",                  // String, required
   "region": "legs",                         // String
   "userId": 1                               // Integer, required (foreign key reference to "users" table)
 }
@@ -65,7 +65,7 @@ https://get-hercules.herokuapp.com/
   "id": 1,                                  // Integer (primary key provided by server and autoincrements)
   "journalId": 1,                           // Integer, required (foreign key reference to "users" table)
   "userId": 1,                              // Integer, required
-  "name": "deadlift",                         // String
+  "name": "deadlift",                       // String
   "reps": 10,                               // Integer
   "sets": 5,                                // Integer
   "weight": 200                             // Integer
@@ -73,8 +73,6 @@ https://get-hercules.herokuapp.com/
 ```
 
 # DUMMY USER ACCOUNTS
-
-`Users`
 
 ```
   username: sammy
@@ -468,7 +466,7 @@ _Method Url:_ `/api/restricted/journals`
 
 _HTTP method:_ **[GET]**
 
-####\_Note: Seeded journals have ids 155-168
+#### \_Note: Seeded journals have ids 155-168
 
 #### Headers
 
@@ -542,7 +540,7 @@ _Method Url:_ `/api/restricted/journals/:id`
 
 _HTTP method:_ **[GET]**
 
-####\_Note: Seeded journals have ids 155-168
+#### \_Note: Seeded journals have ids 155-168
 
 #### Headers
 
@@ -852,7 +850,7 @@ _Method Url:_ `/api/restricted/exercises`
 
 _HTTP method:_ **[GET]**
 
-####\_Note: Seeded exercises have ids 22-41
+#### \_Note: Seeded exercises have ids 22-41
 
 #### Headers
 
@@ -927,7 +925,7 @@ _Method Url:_ `/api/restricted/exercises/journal/:id`
 
 _HTTP method:_ **[GET]**
 
-####\_Note: Seeded exercises have ids 22-41
+#### \_Note: Seeded exercises have ids 22-41
 
 #### Headers
 
